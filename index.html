@@ -44,7 +44,7 @@
 			<a href="#service"><li class="waves-effect waves-light li-full-service">Услуги</li></a>
 			<a href="#portfolio"><li class="waves-effect waves-light li-full-portfolio">Портфолио</li></a>
 			<a href="#about-us"><li class="waves-effect waves-light li-full-about-us">О нас</li></a>
-			<a href="#!"><li class="waves-effect waves-light li-full-contacts">Контакты</li></a>
+			<a href="#contacts"><li class="waves-effect waves-light li-full-contacts">Контакты</li></a>
 
 			<div class="btn-message">
 				<a href="#!" tooltip="Написать нам !" flow="down">
@@ -79,13 +79,13 @@
 			<a href="#home-link" class="brand-logo"><li class="waves-effect waves-light menu-logo-min"></li></a>
 
 			<a class="a" aria-hidden="true" href="#home"><li class="waves-effect waves-light li-home fa fa-home"></li></a>
-			<a class="a" aria-hidden="true" href="#service"><li class="waves-effect waves-light li-service fa fa-cog">
+			<a class="a" aria-hidden="true" href="#service"><li class="waves-effect waves-light li-service fa fa-briefcase">
 			</li></a>
 			<a class="a" aria-hidden="true" href="#portfolio"><li class="waves-effect waves-light li-portfolio fa fa-trophy">
 			</li></a>
 			<a class="a" aria-hidden="true" href="#about-us"><li class="waves-effect waves-light li-about-us fa fa-users">
 			</li></a>
-			<a class="a" aria-hidden="true" href="#!"><li class="waves-effect waves-light li-contacts fa fa-mobile">
+			<a class="a" aria-hidden="true" href="#contacts"><li class="waves-effect waves-light li-contacts fa fa-mobile">
 			</li></a>
 
 			<a class="nav-link" aria-hidden="true" href="#!" ><li class="waves-effect waves-light nav-button"><i class="fa fa-angle-left"></i>
@@ -112,7 +112,7 @@
 				<a href="#design-btn" class="waves-effect waves-light section-1__btn section-1__btn-position-2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 				Веб дизайн</a>
 				<a href="#advertising-btn" class="waves-effect waves-light section-1__btn section-1__btn-position-3"><i class="fa fa-handshake-o" aria-hidden="true"></i>
-				Реклама</a>
+				Продвижение</a>
 			</div>
 		</div>
 	</section>
@@ -313,7 +313,7 @@
 					<div class="col s12">
 
 						<div id="advertising-btn" class="section-4__box-social">
-							<h4 class="section-4__head-social section-4__heading-line"><i class="fa fa-handshake-o" aria-hidden="true"></i> Реклама</h4>
+							<h4 class="section-4__head-social section-4__heading-line"><i class="fa fa-handshake-o" aria-hidden="true"></i> Продвижение</h4>
 							<p class="section-4__text-social">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
 						</div>
 
@@ -348,13 +348,11 @@
 		<h1 class="section-5__head-text">Некоторые наши работы...</h1>
 		<div class="carousel carousel-slider center " data-indicators="true">
 
-			<div class="carousel-fixed-item center middle-indicator">
-				<div class="left">
-					<a href="Previo" class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons left  middle-indicator-text fa fa-angle-left section-5__prev-next"></i></a>
-				</div>
-				<div class="right">
-					<a href="Siguiente" class=" moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons right middle-indicator-text fa fa-angle-right section-5__prev-next"></i></a>
-				</div>
+			<div class="carousel-fixed-item center middle-indicator left">
+				<a href="Previo" class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons left  middle-indicator-text fa fa-angle-left section-5__prev-next"></i></a>
+			</div>
+			<div class="carousel-fixed-item center middle-indicator right">
+				<a href="Siguiente" class=" moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons right middle-indicator-text fa fa-angle-right section-5__prev-next"></i></a>
 			</div>
 
 			<div class="carousel-item white-text" href="#one!">
@@ -384,71 +382,263 @@
 		</div>
 	</section>
 
-	<section id="about-us" class="section-6 section-6__about-us scrollspy">
+	<div id="about-us" class="scrollspy">
+		<section class="section-6 section-6__about-us">
 
-		<h1 class="section-6__head-text">Давайте знакомиться!</h1>
+			<h1 class="section-6__head-text">Давайте знакомиться!</h1>
 
-		<div class="row">
-			<div class="col s12">
+			<div class="row">
+				<div class="col s12">
 
-				<div class="section-6__about-us_avatar">
-					<div class="section-6__about-us_img-box section-6__about-us_bg-space">
-						<img class="section-6__about-us_img-space circle" src="img/s6__avatar-2.jpg">
+					<div class="section-6__about-us_avatar">
+						<div class="section-6__about-us_img-box section-6__about-us_bg-space">
+							<img class="section-6__about-us_img-space circle" src="img/s6__avatar-2.jpg">
+						</div>
+						<div class="section-6__about-us_content-box">
+							<p class="section-6__about-us_content-f-name">Максим</p>
+							<p class="section-6__about-us_content-specialty">backend developer</p>
+							<p class="section-6__about-us_content-about">Привет, народ! Создание сайтов - мое хобби и именно поэтому, если Вам не безразлична судьба интернета, приглашаем вступить в наше сообщество!</p>
+						</div>
+						<div class="section-6__about-us_social-box">
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						</div>
 					</div>
-					<div class="section-6__about-us_content-box">
-						<p class="section-6__about-us_content-f-name">Максим</p>
-						<p class="section-6__about-us_content-specialty">backend developer</p>
-						<p class="section-6__about-us_content-about">Привет, народ! Создание сайтов - мое хобби и именно поэтому, если Вам не безразлична судьба интернета, приглашаем вступить в наше сообщество!</p>
+
+					<div class="section-6__about-us_avatar">
+						<div class="section-6__about-us_img-box section-6__about-us_bg-cow">
+							<img class="section-6__about-us_img-cow circle" src="img/s6__avatar-1.jpg">
+						</div>
+						<div class="section-6__about-us_content-box">
+							<p class="section-6__about-us_content-f-name">Александр</p>
+							<p class="section-6__about-us_content-specialty">web designer</p>
+							<p class="section-6__about-us_content-specialty">frontend developer</p>
+							<p class="section-6__about-us_content-about">Привет, народ! Создание сайтов - мое хобби и именно поэтому, если Вам не безразлична судьба интернета, приглашаем вступить в наше сообщество!</p>
+						</div>
+						<div class="section-6__about-us_social-box">
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						</div>
 					</div>
-					<div class="section-6__about-us_social-box">
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+					<div class="section-6__about-us_avatar">
+						<div class="section-6__about-us_img-box section-6__about-us_bg-supermen">
+							<img class="section-6__about-us_img-supermen circle" src="img/s6__avatar-3.jpg">
+						</div>
+						<div class="section-6__about-us_content-box">
+							<p class="section-6__about-us_content-f-name">Некитос</p>
+							<p class="section-6__about-us_content-specialty">SEO specialist</p>
+							<p class="section-6__about-us_content-about">SEO специалист, который сделает ваш сайт видимым в сети</p>
+						</div>
+						<div class="section-6__about-us_social-box">
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+							<a class="section-6__about-us_social-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<section id="stages" class="section-7">
+
+			<div class="section-7__bg-info-tz">
+
+				<h1 class="section-7__head-text">Этапы работ:</h1>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="section-7__box-manual_indents">
+							<div class=" section-7__box-img">
+								<img class="section-7__img-circle" src="img/s7__img-info.svg" alt="">
+							</div>
+							<div class="section-7__box-item">
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
+								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
-				<div class="section-6__about-us_avatar">
-					<div class="section-6__about-us_img-box section-6__about-us_bg-cow">
-						<img class="section-6__about-us_img-cow circle" src="img/s6__avatar-1.jpg">
-					</div>
-					<div class="section-6__about-us_content-box">
-						<p class="section-6__about-us_content-f-name">Александр</p>
-						<p class="section-6__about-us_content-specialty">web designer</p>
-						<p class="section-6__about-us_content-specialty">frontend developer</p>
-						<p class="section-6__about-us_content-about">Привет, народ! Создание сайтов - мое хобби и именно поэтому, если Вам не безразлична судьба интернета, приглашаем вступить в наше сообщество!</p>
-					</div>
-					<div class="section-6__about-us_social-box">
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
-					</div>
-				</div>
+				<div class="container">
+					<div class="row">
 
-				<div class="section-6__about-us_avatar">
-					<div class="section-6__about-us_img-box section-6__about-us_bg-supermen">
-						<img class="section-6__about-us_img-supermen circle" src="img/s6__avatar-3.jpg">
-					</div>
-					<div class="section-6__about-us_content-box">
-						<p class="section-6__about-us_content-f-name">Некитос</p>
-						<p class="section-6__about-us_content-specialty">SEO specialist</p>
-						<p class="section-6__about-us_content-about">SEO специалист, который сделает ваш сайт видимым в сети</p>
-					</div>
-					<div class="section-6__about-us_social-box">
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
-						<a class="section-6__about-us_social-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						<div class="section-7__box-manual_indents">
+							<div class="section-7__box-item">
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
+								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							</div>
+							<div class="section-7__box-img">
+								<img class="section-7__img-circle section-7__img-circle_right" src="img/s7__img-tz.svg" alt="">
+							</div>
+						</div>
+
 					</div>
 				</div>
 
 			</div>
-		</div>
 
-	</section>
+			<div class="section-7__bg-prototype-design">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="section-7__box-manual_indents">
+							<div class="section-7__box-img">
+								<img class="section-7__img-circle" src="img/s7__img-prototype.svg" alt="">
+							</div>
+							<div class="section-7__box-item">
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
+								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="section-7__box-manual_indents">
+							<div class="section-7__box-item">
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
+								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							</div>
+							<div class="section-7__box-img">
+								<img class="section-7__img-circle section-7__img-circle_right" src="img/s7__img-design.svg" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="section-7__bg-development-seo">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="section-7__box-manual_indents">
+							<div class="section-7__box-img">
+								<img class="section-7__img-circle" src="img/s7__img-development.svg" alt="">
+							</div>
+							<div class="section-7__box-item">
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
+								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="section-7__box-manual_indents">
+							<div class="section-7__box-item">
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
+								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							</div>
+							<div class="section-7__box-img">
+								<img class="section-7__img-circle section-7__img-circle_right" src="img/s7__img-seo.svg" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</div>
+
+	<div id="contacts" class="scrollspy">
+		<section class="section-8">
+
+			<h1 class="section-8__head-text">Оставить заявку</h1>
+
+			<div class="container">
+				<div class="row section-8__box-form">
+					<form class="section-8__form">
+
+						<div class="input-field section-8__box-ipt-text">
+							<input id="last_name" type="text" class="validate section-8__ipt-text">
+							<label class="section-8__lbl-text" for="last_name">Как к Вам обращаться</label>
+						</div>
+						<div class="input-field section-8__box-ipt-mail">
+							<input id="e-mail" type="email" class="validate section-8__ipt-mail">
+							<label class="section-8__lbl-mail" for="e-mail">Ваша электронная почта</label>
+						</div>
+
+					</form>
+
+					<button class="waves-effect waves-light section-8__button">
+						Отправить
+					</button>
+
+				</div>
+			</div>
+
+		</section>
+
+		<section class="footer-9">
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col xl4 footer-9__box-info">
+						<h3 class="footer-9__header-text">О проекте</h3>
+						<p class="footer-9__p-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cupiditate facere repudiandae obcaecati adipisci, consequatur, totam asperiores.</p>
+					</div>
+
+					<div class="col xl8">
+						<div class="footer-9__box-contacts">
+							<a href="#!" class="waves-effect waves-light footer-9__link">
+								<i class="fa fa-vk footer-9__link-icon" aria-hidden="true"></i>
+							</a>
+							<a href="#!" class="waves-effect waves-light footer-9__link">
+								<i class="fa fa-telegram footer-9__link-icon" aria-hidden="true"></i>
+							</a>
+							<a href="#!" class="waves-effect waves-light footer-9__link">
+								<i class="fa fa-facebook footer-9__link-icon" aria-hidden="true"></i>
+							</a>
+							<a href="#!" class="waves-effect waves-light footer-9__link">
+								<i class="fa fa-envelope footer-9__link-icon" aria-hidden="true"></i>
+							</a>
+						</div>
+						<ul class="footer-9__ul-nav">
+							<p class="footer-9__ul-header">Меню сайта</p>
+							<a class="footer-9__link-li" href="#home"><li class="footer-9__li">Главная</li></a>
+							<a class="footer-9__link-li" href="#development-btn"><li class="footer-9__li">Разработка</li></a>
+							<a class="footer-9__link-li" href="#design-btn"><li class="footer-9__li">Дизайн</li></a>
+							<a class="footer-9__link-li" href="#advertising-btn"><li class="footer-9__li">Продвижение</li></a>
+							<a class="footer-9__link-li" href="#portfolio"><li class="footer-9__li">Портфолио</li></a>
+							<a class="footer-9__link-li" href="#about-us"><li class="footer-9__li">О нас</li></a>
+							<a class="footer-9__link-li" href="#stages"><li class="footer-9__li">Этапы работ</li></a>
+							<a class="footer-9__link-li" href="#contacts"><li class="footer-9__li">Контакты</li></a>
+						</ul>
+					</div>
+
+					<div class="col l12 footer-9__box-img-logo">
+						<a href="#home-link"><img class="footer-9__img-logo" src="img/logo.svg" alt=""></a>
+						<p class="footer-9__end-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+	</div>
 
 </main>
-
-<footer class="footer"></footer>
 
 <script type="text/javascript" src="js/scripts.min.js"></script>
 
