@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Web wild fox</title>
+	<title>Web wild fox | Сайты в Самаре на заказ</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +47,7 @@
 			<a href="#contacts"><li class="waves-effect waves-light li-full-contacts">Контакты</li></a>
 
 			<div class="btn-message">
-				<a href="#!" tooltip="Написать нам !" flow="down">
+				<a href="#modal-e-mail" class="modal-trigger" tooltip="Написать нам !" flow="down">
 					<i class="fa fa-paper-plane btn-message__link" aria-hidden="true"></i>
 				</a>
 			</div>
@@ -88,8 +88,13 @@
 			<a class="a" aria-hidden="true" href="#contacts"><li class="waves-effect waves-light li-contacts fa fa-mobile">
 			</li></a>
 
-			<a class="nav-link" aria-hidden="true" href="#!" ><li class="waves-effect waves-light nav-button"><i class="fa fa-angle-left"></i>
-			</li></a>
+			<div class="btn-message__nav-right">
+				<a href="#modal-e-mail" class="modal-trigger">
+					<i class="fa fa-paper-plane btn-message__link-min" aria-hidden="true"></i>
+				</a>
+			</div>
+
+			<li class="waves-effect waves-light nav-button"><i class="fa fa-angle-left"></i></li>
 
 			<a class="nav-link" aria-hidden="true" href="#home-link" ><li class="waves-effect waves-light nav-button-up"><i class="fa fa-angle-up"></i>
 			</li></a>
@@ -100,6 +105,44 @@
 
 
 <main id="home-link" class="main">
+
+	<!-- Modal Structure -->
+	<div id="modal-e-mail" class="modal">
+		<div class="modal-content">
+
+			<h1 class="section-8__head-text section-8__form-head-text">Оставить заявку</h1>
+
+			<div class="container">
+				<div class="row section-8__box-form">
+					<form class="section-8__form">
+
+						<div class="input-field section-8__box-ipt-text">
+							<input id="nav-last_name" type="text" class="validate section-8__ipt-text">
+							<label class="section-8__lbl-text" for="nav-last_name">Как к Вам обращаться</label>
+						</div>
+						<div class="input-field section-8__box-ipt-mail">
+							<input id="nav-e-mail" type="email" class="validate section-8__ipt-mail">
+							<label class="section-8__lbl-mail" for="nav-e-mail">Ваша электронная почта</label>
+						</div>
+
+					</form>
+
+					<button class="waves-effect waves-light section-8__button">
+						Отправить
+					</button>
+
+
+				</div>
+			</div>
+
+			<div class="modal-footer section-8__box-btn-close">
+				<div class="modal-action modal-close waves-effect btn-flat">
+					<i class="fa fa-times section-8__btn-close" aria-hidden="true"></i>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 	<section id="home" class="section-1 scrollspy">
 		<div class="row section-1-indentation__full-display">
@@ -127,7 +170,7 @@
 						<h3 class="section-2__about-us-text">Мы предлагаем Вам:</h3>
 						<div id="development-btn" class="section-2__box-develop">
 							<h4 class="section-2__head-develop section-2__heading-line"><i class="fa fa-code" aria-hidden="true"></i> Разработка</h4>
-							<p class="section-2__text-develop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							<p class="section-2__text-develop">Создаем сайты для Вашего бизнеса. От идеи - до результата. Качественно и с любовью! </p>
 						</div>
 
 					</div>
@@ -143,11 +186,25 @@
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">Landing page <i class="fa fa-angle-up section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<p class="section-2__card-text">Или иными словами - "посадочная страница".</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Landing page <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Целевая страница, содержащая основную информацию о товаре или услуге. Может использоваться для иных целей, например для сбора контактной информации ( ФИО, e-mail, мобильный телефон и т.д. )</p>
+						</div>
+					</div>
+
+					<div class="card section-2__card-box">
+						<div class="card-image waves-effect waves-block waves-light section-2__card-image">
+							<img class="activator" src="img/s2__img-multipage.svg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Многостраничный сайт <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Веб сайт с двумя и более страниц ...</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Многостраничный сайт <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Содержит разделы, подразделы, ориентированные на различную аудиторию. Существует огроммное число всевозможных видов сайтов: тематический, корпоративный, промо сайт, интернет-магазин и многое другое.</p>
 						</div>
 					</div>
 
@@ -156,12 +213,12 @@
 							<img class="activator" src="img/s2__img-portfolio.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Portfolio <i class="fa fa-angle-up section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Портфолио <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Презентация Ваших достижений и побед!</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Портфолио <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Объединяет и предоставляет в единой, доступной форме услуги с учетом их специфики. Так же носит рекламный характер.</p>
 						</div>
 					</div>
 
@@ -170,12 +227,12 @@
 							<img class="activator" src="img/s2__img-website-card.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Website card <i class="fa fa-angle-up section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Business card <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Сайт-визитка который содержит контактную информацию.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Сайт-визитка <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Содержит основные контактные данные о владельце сайта (физ./юр. лицо): адрес, телефон, почта, схема проезда на карте, сфера занятости, история компании.</p>
 						</div>
 					</div>
 
@@ -184,12 +241,12 @@
 							<img class="activator" src="img/s2__img-key.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Full construction <i class="fa fa-angle-up section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">"Под ключ" <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Полностью готовый "боевой" продукт.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">"Под ключ" <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">От идеи и до полной реализации - работающий продукт. В финале всех работ Вы получаете абсолютно всю информацию, которая может потребоваться для дальнейшего поддержания и развития Вашего сайта и становитесь "капитаном личного корабля"!</p>
 						</div>
 					</div>
 
@@ -198,12 +255,40 @@
 							<img class="activator" src="img/s2__img-vip.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Personal project <i class="fa fa-angle-up section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Персональный проект <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Любой каприз за Ваши деньги!</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Персональный проект <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Стоит ли говорить, что единственное Ваше ограничение - это бюджет и фантазия.</p>
+						</div>
+					</div>
+
+					<div class="card section-2__card-box">
+						<div class="card-image waves-effect waves-block waves-light section-2__card-image">
+							<img class="activator" src="img/s2__img-optimal-serv.svg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Поддержка сайтов <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Перенос на оптимальные сервера.</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Поддержка сайтов <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">... а также контент-менеджмент, добавление и изменение функционала сайта, настройка адаптивности под различные разрешения экранов.</p>
+						</div>
+					</div>
+
+					<div class="card section-2__card-box">
+						<div class="card-image waves-effect waves-block waves-light section-2__card-image">
+							<img class="activator" src="img/s2__img-chat.svg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Настройка чата <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Подключение и настройка чата на сайте.</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Настройка чата <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Эффективный способ для поддержки клиентов и продаж, увеличивающий конверсию сайта. Как следствие - рост доходов, повышение лояльности клиентов.</p>
 						</div>
 					</div>
 
@@ -212,12 +297,26 @@
 							<img class="activator" src="img/s2__img-prog-psd.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Верстка из PSD <i class="fa fa-angle-up section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Верстка дизайна <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Превращение дизайнерских идей в веб страницы.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-2__card-box_open"></i></span>
-							<p class="section-2__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Верстка дизайна <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Верстка готового макета по Вашему ТЗ с использованием популярных фрэймворков и современных веб-технологий.</p>
+						</div>
+					</div>
+
+					<div class="card section-2__card-box">
+						<div class="card-image waves-effect waves-block waves-light section-2__card-image">
+							<img class="activator" src="img/s3__img-ux-ui.svg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">UX/UI проектирование <i class="fa fa-angle-up section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Создание удобного, гармоничного интерфейса.</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">UX/UI <i class="fa fa-angle-down section-2__card-box_open"></i></span>
+							<p class="section-2__card-text">Создание удобных и в то же время красивых интерфейсов под Ваш продукт.</p>
 						</div>
 					</div>
 
@@ -234,7 +333,7 @@
 
 						<div id="design-btn" class="section-3__box-design">
 							<h4 class="section-3__head-design section-3__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Веб дизайн</h4>
-							<p class="section-3__text-design">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							<p class="section-3__text-design">Уникальный дизайн под актуальные задачи Вашего бизнеса! Все преимущества векторной и растровой графики для Вашего будущего сайта. </p>
 						</div>
 
 					</div>
@@ -250,12 +349,12 @@
 							<img class="activator" src="img/s3__img-psd.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Design <i class="fa fa-angle-up section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Веб дизайн <i class="fa fa-angle-up section-3__card-box_open"></i></span>
+							<p class="section-3__card-text">Красивая обертка для Вашего сайта.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Веб дизайн <i class="fa fa-angle-down section-3__card-box_open"></i></span>
+							<p class="section-3__card-text"> Создание прототипа и определение функционала будущего сайта, поиск наиболее удобного решения подачи информации. Отрисовка уникального дизайна на основе полученных данных, либо по согласованному ТЗ/ТИ.</p>
 						</div>
 					</div>
 
@@ -264,26 +363,12 @@
 							<img class="activator" src="img/s3__img-svg.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Vector <i class="fa fa-angle-up section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Векторная графика <i class="fa fa-angle-up section-3__card-box_open"></i></span>
+							<p class="section-3__card-text">Масштабируемые изображения без потери качества.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
-						</div>
-					</div>
-
-					<div class="card section-3__card-box">
-						<div class="card-image waves-effect waves-block waves-light section-3__card-image">
-							<img class="activator" src="img/s3__img-ux-ui.svg">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">UX/UI planning <i class="fa fa-angle-up section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Векторная графика <i class="fa fa-angle-down section-3__card-box_open"></i></span>
+							<p class="section-3__card-text">Создание векторных изображений любой сложности. Отрисовка индивидуальных иконок на сайт.</p>
 						</div>
 					</div>
 
@@ -292,12 +377,12 @@
 							<img class="activator" src="img/s3__img-redesign.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Redesign <i class="fa fa-angle-up section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">Редизайн <i class="fa fa-angle-up section-3__card-box_open"></i></span>
+							<p class="section-3__card-text">Косметические обновления для устаревших сайтов.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-3__card-box_open"></i></span>
-							<p class="section-3__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">Редизайн <i class="fa fa-angle-down section-3__card-box_open"></i></span>
+							<p class="section-3__card-text">Изменение внешнего вида и структуры сайта существующего дизайна с учетом актуальной информации, целевой аудитории и новых потребностей компании.</p>
 						</div>
 					</div>
 
@@ -313,8 +398,8 @@
 					<div class="col s12">
 
 						<div id="advertising-btn" class="section-4__box-social">
-							<h4 class="section-4__head-social section-4__heading-line"><i class="fa fa-handshake-o" aria-hidden="true"></i> Продвижение</h4>
-							<p class="section-4__text-social">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+							<h4 class="section-4__head-social section-4__heading-line"><i class="fa fa-handshake-o" aria-hidden="true"></i> Продвижение и обслуживание сайтов</h4>
+							<p class="section-4__text-social">Мощное продвижение в самых популярных поисковых системах. Без лишних слов - только результат! </p>
 						</div>
 
 					</div>
@@ -326,15 +411,29 @@
 
 					<div class="card section-4__card-box">
 						<div class="card-image waves-effect waves-block waves-light section-4__card-image">
-							<img class="activator" src="img/s4__img-social.svg">
+							<img class="activator" src="img/s4__img-seo.svg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Social <i class="fa fa-angle-up section-4__card-box_open"></i></span>
-							<p class="section-4__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<span class="card-title activator grey-text text-darken-4">SEO продвижение <i class="fa fa-angle-up section-4__card-box_open"></i></span>
+							<p class="section-4__card-text">Повышение места в поисковой выдаче по запросу.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4">Card Title <i class="fa fa-angle-down section-4__card-box_open"></i></span>
-							<p class="section-4__card-text">Here is some more information about this product that is only revealed once clicked on.</p>
+							<span class="card-title grey-text text-darken-4">SEO <i class="fa fa-angle-down section-4__card-box_open"></i></span>
+							<p class="section-4__card-text">SEO (англ. Search Engine Optimization) поисковая оптимизация - комплекс мер для поднятия позиций сайта в результатах выдачи "поисковиков" (Яндекс, Гугл ...)</p>
+						</div>
+					</div>
+
+					<div class="card section-4__card-box">
+						<div class="card-image waves-effect waves-block waves-light section-4__card-image">
+							<img class="activator" src="img/s4__img-reg-domen.svg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Domain name <i class="fa fa-angle-up section-4__card-box_open"></i></span>
+							<p class="section-4__card-text">Выбор и регистрация доменных имён.</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Доменное имя <i class="fa fa-angle-down section-4__card-box_open"></i></span>
+							<p class="section-4__card-text">Индивидуальный, уникальный идендификатор для сайта в интернете, понятный для людей.</p>
 						</div>
 					</div>
 
@@ -359,23 +458,23 @@
 				<img class="section-5__img-slide" src="img/s5__slide-1.jpg" alt="">
 				<div class="section-5__box-slide">
 					<h4 class="section-5__head-slide section-5__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Дизайн для сайта - "Красота и здоровье"</h4>
-					<p class="section-5__text-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+					<p class="section-5__text-slide">Обширная тема, объединяющая множество направлений. Представлена главная страница с двумя основными услугами - стильные прически и стретчинг.</p>
 				</div>
 			</div>
 
 			<div class="carousel-item white-text" href="#two!">
-				<img class="section-5__img-slide" src="img/s5__slide-1.jpg" alt="">
+				<a href="https://u-theatre.ru/"><img class="section-5__img-slide" src="img/s5__slide-2.jpg" alt=""></a>
 				<div class="section-5__box-slide">
-					<h4 class="section-5__head-slide section-5__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Дизайн для сайта - "Красота и здоровье"</h4>
-					<p class="section-5__text-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+					<h4 class="section-5__head-slide section-5__heading-line"><i class="fa fa-code" aria-hidden="true"></i> Сайт - "Уместный театр"</h4>
+					<p class="section-5__text-slide"> Независимый проект, содружество актеров, режиссеров и представителей близких к театру искусств. </p>
 				</div>
 			</div>
 
 			<div class="carousel-item white-text" href="#three!">
-				<img class="section-5__img-slide" src="img/s5__slide-1.jpg" alt="">
+				<a href="https://avto-r.info/"><img class="section-5__img-slide" src="img/s5__slide-3.jpg" alt=""></a>
 				<div class="section-5__box-slide">
-					<h4 class="section-5__head-slide section-5__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Дизайн для сайта - "Красота и здоровье"</h4>
-					<p class="section-5__text-slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+					<h4 class="section-5__head-slide section-5__heading-line"><i class="fa fa-code" aria-hidden="true"></i> Сайт - "Установка решеток в авто"</h4>
+					<p class="section-5__text-slide">Наша с Вами безопасность, а тем более безопасность наших близких - это то, на чем не стоит экономить. Специальные решетки-перегородки в машинах для транспортировки питомцев являются отличным решением!</p>
 				</div>
 			</div>
 
@@ -397,7 +496,7 @@
 						<div class="section-6__about-us_content-box">
 							<p class="section-6__about-us_content-f-name">Максим</p>
 							<p class="section-6__about-us_content-specialty">backend developer</p>
-							<p class="section-6__about-us_content-about">Привет, народ! Создание сайтов - мое хобби и именно поэтому, если Вам не безразлична судьба интернета, приглашаем вступить в наше сообщество!</p>
+							<p class="section-6__about-us_content-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 						</div>
 						<div class="section-6__about-us_social-box">
 							<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
@@ -414,7 +513,7 @@
 							<p class="section-6__about-us_content-f-name">Александр</p>
 							<p class="section-6__about-us_content-specialty">web designer</p>
 							<p class="section-6__about-us_content-specialty">frontend developer</p>
-							<p class="section-6__about-us_content-about">Привет, народ! Создание сайтов - мое хобби и именно поэтому, если Вам не безразлична судьба интернета, приглашаем вступить в наше сообщество!</p>
+							<p class="section-6__about-us_content-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 						</div>
 						<div class="section-6__about-us_social-box">
 							<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
@@ -431,7 +530,7 @@
 						<div class="section-6__about-us_content-box">
 							<p class="section-6__about-us_content-f-name">Некитос</p>
 							<p class="section-6__about-us_content-specialty">SEO specialist</p>
-							<p class="section-6__about-us_content-about">SEO специалист, который сделает ваш сайт видимым в сети</p>
+							<p class="section-6__about-us_content-about">SEO специалист, который сделает ваш сайт видимым в сети.</p>
 						</div>
 						<div class="section-6__about-us_social-box">
 							<a class="section-6__about-us_social-link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
@@ -459,8 +558,8 @@
 								<img class="section-7__img-circle" src="img/s7__img-info.svg" alt="">
 							</div>
 							<div class="section-7__box-item">
-								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
-								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Сбор информации</h4>
+								<p class="section-7__text-item">Знакомство заказчика с исполнителем. Налаживание обратной связи между сторонами. Формирование "начального образа" будущего продукта, заполнение брифа/анкеты. Изучение бизнеса заказчика и целевой аудитории.</p>
 							</div>
 						</div>
 
@@ -472,8 +571,8 @@
 
 						<div class="section-7__box-manual_indents">
 							<div class="section-7__box-item">
-								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
-								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Написание ТЗ/ТИ</h4>
+								<p class="section-7__text-item">Постановка задач в письменной форме, заверенной обеими сторонами. Может присутствовать на каждом из этапов работ - проектирование, дизайн, программирование, SEO, поддержка сайта.</p>
 							</div>
 							<div class="section-7__box-img">
 								<img class="section-7__img-circle section-7__img-circle_right" src="img/s7__img-tz.svg" alt="">
@@ -495,8 +594,8 @@
 								<img class="section-7__img-circle" src="img/s7__img-prototype.svg" alt="">
 							</div>
 							<div class="section-7__box-item">
-								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
-								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Создание макета</h4>
+								<p class="section-7__text-item">Макет или "Каркас" - это скелет будущего сайта. Включает в себя: элементы навигации, расположение и размер инфо-блоков, переходы на внутренние страницы сайта в схематическом представлении.</p>
 							</div>
 						</div>
 
@@ -508,8 +607,8 @@
 
 						<div class="section-7__box-manual_indents">
 							<div class="section-7__box-item">
-								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
-								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Отрисовка дизайна</h4>
+								<p class="section-7__text-item">На основе макета, ТЗ/ТИ, целевой аудитории и особенностей бизнеса заказчика вручную отрисовывается дизайн для главной и внутренних страниц сайта. Может быть представлен как в растровом формате, векторе, так и комбинированно.</p>
 							</div>
 							<div class="section-7__box-img">
 								<img class="section-7__img-circle section-7__img-circle_right" src="img/s7__img-design.svg" alt="">
@@ -531,8 +630,8 @@
 								<img class="section-7__img-circle" src="img/s7__img-development.svg" alt="">
 							</div>
 							<div class="section-7__box-item">
-								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
-								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Верстка и кодинг</h4>
+								<p class="section-7__text-item">Перенос отрисованного и утвержденного макета дизайна в код (вёрстка), подключение форм, настройка анимации, установка на систему управления контентом, наполнение актуальной текстовой, аудио и видео информацией</p>
 							</div>
 						</div>
 
@@ -544,8 +643,8 @@
 
 						<div class="section-7__box-manual_indents">
 							<div class="section-7__box-item">
-								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ipsum lorem dolor</h4>
-								<p class="section-7__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lacus, cursus vitae mi ut, feugiat pulvinar sapien. Phasellus varius et urna eu molestie. Sed. </p>
+								<h4 class="section-7__head-item section-7__heading-line"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> SEO (продвижение)</h4>
+								<p class="section-7__text-item">Оптимизация контента сайта под поисковые системы. Увеличение скорости загрузки сайта. Подбор нужных ключевых слов а также заполнение мета-тегов.</p>
 							</div>
 							<div class="section-7__box-img">
 								<img class="section-7__img-circle section-7__img-circle_right" src="img/s7__img-seo.svg" alt="">
@@ -581,8 +680,71 @@
 					</form>
 
 					<button class="waves-effect waves-light section-8__button">
-						Отправить
+						Отправить *
 					</button>
+
+					<!-- Modal Trigger -->
+					<a class="modal-trigger" href="#modal-personal-inform">
+						<p class="section-8__button_modal-person-inf_txt">* Нажимая кнопку ( Отправить ), Вы подтверждаете свое согласие на обработку персональных данных <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></p>
+					</a>
+
+					<!-- Modal Structure -->
+					<div id="modal-personal-inform" class="modal modal-fixed-footer section-8__modal-personal-inform_box">
+						<div class="modal-content">
+							<h4 class="section-8__modal-personal-inform_head">Согласие на обработку
+							персональных данных</h4>
+
+							<div class="section-8__modal-personal-inform">
+								<p class="section-8__modal-personal-inform_lead">Пользователь, заполняя форму обратной связи на данном сайте,
+									принимает   настоящее   Согласие   на   обработку   персональных   данных   (далее   –
+									Согласие).   Действуя   свободно,   своей   волей   и   в   своем   интересе,   а   также
+									подтверждая свою дееспособность, Пользователь дает свое согласие Физческому Лицу (далее - физ. лицо) "А.Н.Абрамкин" (далее - Исполнитель)  на   обработку   своих
+								персональных       данных       со       следующими       условиями:</p>
+								<p class="section-8__modal-personal-inform_text">1.   Данное   Согласие   дается   на   обработку   персональных   данных,   как   без
+								использования   средств   автоматизации,   так   и   с   их   использованием.</p>  
+								<p class="section-8__modal-personal-inform_text">2.   Согласие   дается   на   обработку   следующих   моих   персональных   данных,   не
+									являющихся специальными или биометрическими: фамилия и имя, телефон, e-
+									mail, пользовательские данные (сведения о местоположении; тип и версия ОС; тип
+									и версия Браузера; тип устройства и разрешение его экрана; источник, откуда
+									пользователь пришел на сайт; язык ОС и Браузера; какие страницы открывает и на
+								какие       кнопки       нажимает       пользователь;       ip-адрес).</p>
+								<p class="section-8__modal-personal-inform_text">3.     Персональные     данные     не     являются     общедоступными.</p>    
+								<p class="section-8__modal-personal-inform_text">4.   Цель   обработки   персональных   данных:   обработка   входящих   запросов   на
+									создание   сайтов   и   ведение   корпоративных   блогов;   рассмотрение   портфолио
+									кандидатов на вакантные позиции; аналитика действий физического лица на веб-
+								сайте и функционирование веб-сайта; проведение рассылки обновлений в блоге.</p>
+								<p class="section-8__modal-personal-inform_text">5. Основанием для обработки персональных данных является: ст. 24 Конституции
+									Российской   Федерации;   ст.6   Федерального   закона   No152-ФЗ   «О   персональных
+								данных»;   настоящее   согласие   на   обработку   персональных   данных.</p>  
+								<p class="section-8__modal-personal-inform_text">6. В ходе обработки с персональными данными  будут совершены  следующие
+									действия:   сбор;   запись;   систематизация;   накопление;   хранение;   уточнение
+									(обновление, изменение); извлечение; использование; передача (распространение,
+								предоставление,     доступ);     блокирование;     удаление;     уничтожение. </p>   
+								<p class="section-8__modal-personal-inform_text">7.   Персональные   данные   обрабатываются   до   отписки   физического   лица   от
+									рассылки. Также обработка персональных данных  может быть прекращена по
+									запросу   субъекта   персональных   данных.   Хранение   персональных   данных,
+									зафиксированных   на   бумажных   носителях,   осуществляется   согласно
+									Федеральному закону No125-ФЗ «Об архивном деле в Российской Федерации» и
+									иным   нормативно-правовым   актам   в   области   архивного   дела   и   архивного
+								хранения.</p>
+								<p class="section-8__modal-personal-inform_text">8.   Согласие   может   быть   отозвано   субъектом   персональных   данных   или   его
+									представителем путем направления заявления об отзыве согласия на обработку
+								персональных   данных   на любой имеющийся в открытом доступе контакт Исполнителя, так же доступный на данном сайте </p>   
+								<p class="section-8__modal-personal-inform_text">9.   В   случае   отзыва   субъектом   персональных   данных   или   его   представителем
+									согласия   на   обработку   персональных   данных   Исполнитель   вправе
+									продолжить обработку персональных данных без согласия субъекта персональных
+									данных при наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6,
+									части   2   статьи   10   и   части   2   статьи   11   Федерального   закона   No152-ФЗ   «О
+								персональных         данных»         от         27.07.2006         г.</p>
+								<p class="section-8__modal-personal-inform_text">10. Настоящее согласие действует все время до момента прекращения обработки
+								персональных данных, указанных в п.7 и п.8 данного Согласия. </p>
+							</div>
+
+						</div>
+						<div class="modal-footer">
+							<div class="modal-action modal-close waves-effect btn-flat ">Agree</div>
+						</div>
+					</div>
 
 				</div>
 			</div>
@@ -596,7 +758,7 @@
 
 					<div class="col xl4 footer-9__box-info">
 						<h3 class="footer-9__header-text">О проекте</h3>
-						<p class="footer-9__p-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cupiditate facere repudiandae obcaecati adipisci, consequatur, totam asperiores.</p>
+						<p class="footer-9__p-text">Web Wild Fox - свободное объединение программистов, дизайнеров, верстальщиков и просто творческих людей, готовых трудиться на всеобщее благо. И пусть интернет-сёрфинг станет чуточку интереснее!</p>
 					</div>
 
 					<div class="col xl8">
@@ -629,7 +791,8 @@
 
 					<div class="col l12 footer-9__box-img-logo">
 						<a href="#home-link"><img class="footer-9__img-logo" src="img/logo.svg" alt=""></a>
-						<p class="footer-9__end-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<p class="footer-9__end-text">Сделано людьми для людей <i class="fa fa-heart red-text" aria-hidden="true"></i></p>
+						<p class="footer-9__end-text-copy"><i class="fa fa-copyright" aria-hidden="true"></i> А.Н.Абрамкин, 2018</p>
 					</div>
 
 				</div>
