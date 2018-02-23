@@ -982,19 +982,25 @@
 			<div class="row section-8__box-form">
 				<form class="section-8__form">
 
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Сайт - Web wild fox">
+					<input type="hidden" name="admin_email" value="vrotmnenogi.12@mail.ru">
+					<input type="hidden" name="form_subject" value="Форма в разделе 'Контакты'">
+					<!-- END Hidden Required Fields -->
+
 					<div class="input-field section-8__box-ipt-text">
-						<input id="last_name" type="text" name="name" required="required" class="validate section-8__ipt-text">
+						<input id="last_name" type="text" name="Имя клиента" required="required" class="validate section-8__ipt-text">
 						<label class="section-8__lbl-text" for="last_name">Как к Вам обращаться</label>
 					</div>
 					<div class="input-field section-8__box-ipt-mail">
-						<input id="e-mail" type="email" name="email" required="required" class="validate section-8__ipt-mail">
+						<input id="e-mail" type="email" name="e-mail клиента" required="required" class="validate section-8__ipt-mail">
 						<label class="section-8__lbl-mail" for="e-mail">Ваша электронная почта</label>
 					</div>
 
 					<button type="submit" onclick="M.toast({html: 'Спасибо за Вашу заявку!'})" class="waves-effect waves-light section-8__button">
 						Отправить *
 					</button>
-				
+
 				</form>
 
 
