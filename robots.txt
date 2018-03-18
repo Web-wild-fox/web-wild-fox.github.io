@@ -1,8 +1,8 @@
-# Указывает директивы для всех роботов одновременно
+# Instructions for specific agents
 User-agent: *
-# Запрещает индексацию css, fonts, img, js
+# Access settings for indexing: css, fonts, img, js
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /js/
-# Указывает на главное зеркало сайта
+# Primary URL
 Host: https://web-wild-fox.ru
